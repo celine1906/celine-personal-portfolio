@@ -114,8 +114,8 @@ body {
 .hero-content{flex:1;max-width:640px}
 .hero h1, .hero .intro{margin:0}
 .hero h1{font-size:56px;margin-bottom:18px}
-.intro{color:#d8d8d8;line-height:1.6;margin-bottom:22px}
-.cta{display:inline-block;background:linear-gradient(180deg,#3fd12a,#2aa113);padding:14px 24px;border-radius:8px;color:#072000;text-decoration:none;font-weight:700;box-shadow:0 8px 36px rgba(63,209,42,0.2)}
+.intro{color:#d8d8d8;line-height:1.6;margin-bottom:22px;}
+.cta{display:inline-block;background:linear-gradient(180deg,#3fd12a,#2aa113);margin-top:22px;padding:14px 24px;border-radius:8px;color:#072000;text-decoration:none;font-weight:700;box-shadow:0 8px 36px rgba(63,209,42,0.2)}
 .worked-with{margin-top:28px;color:rgba(255,255,255,0.4);font-size:14px}
 .hero-image img{width:360px;height:360px;object-fit:cover;border-radius:50%;border:8px solid rgba(255,255,255,0.04);box-shadow:0 18px 60px rgba(0,0,0,0.6)}
 
