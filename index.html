@@ -77,183 +77,388 @@ I was also a Learner at the Apple Developer Academy, where I spent around 10 mon
   <div class="container">
     <h2>Projects</h2>
 
-    <div class="project-list">
+    <div class="project-tabs">
+      <button class="tab-btn active" data-tab="ios">iOS Projects</button>
+      <button class="tab-btn" data-tab="data">Data Projects</button>
+    </div>
 
-        <article class="project project-grid fade-up">
-        <div class="project-media">
-          <img src="cako.png" alt="Cako screenshot" />
-          <div class="project-meta">
-                <span class="month">Sep - Dec 2025</span>
-                    <h3>Cako — Presentation Practice App with Real-time Audience Reactions & Distractions</h3>
-                    
-            <p><strong>Tech</strong>: WhisperKit · Spice Model · TensorflowLite · Rive Runtime · ARKit</p>
-         <div class="links">
-            <a href="https://github.com/celine1906/NagaX"><i class="fa-brands fa-github"></i> Repository</a>
-            <a href="https://www.figma.com/design/mo4IW9ctyB6sWxhl5emeWf/Cako-Design?node-id=7-2&t=s34jp5aftnonYaqx-1"><i class="fa-brands fa-figma"></i> Design</a>
-            <a href="https://apps.apple.com/id/app/cako/id6755706759"><i class="fa-brands fa-apple"></i> App Store</a>
-            </div>
-        </div>
-        </div>
-        <div class="project-content">
-          <p><strong>Problem</strong><br>
-            Students practice presentations without real distractions or audience feedback, causing delivery issues to go unnoticed.</p>
+    <div class="tab-content active" id="ios">
+      <div class="project-list">
 
-            <p><strong>Solution</strong><br>
-            An interactive practice app that simulates live audience reactions based on delivery aspects (intonation, tempo, filler words, and eye contact) and distractions, followed by data-driven delivery evaluation.</p>
-
-<p><strong>My Contribution</strong></p>
-<ul>
-  <li>Researched and defined the technical stack for real-time presentation delivery analysis</li>
-  <li>Integrated Spice Model to estimate vocal pitch and analyze intonation patterns</li>
-  <li>Built delivery scoring logic using Combine to process real-time speech and pitch data</li>
-  <li>Implemented Rive Runtime to dynamically update audience reactions based on delivery performance</li>
-  <li>Implemented accessibility features including larger text support, differentiate without color alone, and voice control</li>
-</ul>
-
-<p><strong>Impact</strong></p>
-<ul>
-  <li>Helped users identify delivery issues they were previously unaware of</li>
-  <li>Improved focus and improvisation under distraction</li>
-  <li>Increased confidence and preparedness before real presentation scenarios</li>
-  <li>Available in iOS and iPadOS for better experience, can be accessed on Testflight</li>
-</ul>
-       </div>  
-    </article>
-
-    <article class="project project-grid fade-up">
-        <div class="project-media">
-          <img src="cococo.jpg" alt="Family Trip screenshot" />
-          <div class="project-meta">
-            <span class="month">Aug 2025</span>
-          <h3>Coco.co — Enhancing Booking Trip App Experience</h3>
-          
-          <p><strong>Tech</strong>: UIKit · MVVM + Coordinator Architecture · Supabase</p>
+          <article class="project project-grid fade-up">
+          <div class="project-media">
+            <img src="cako.png" alt="Cako screenshot" />
+            <div class="project-meta">
+                  <span class="month">Sep - Dec 2025</span>
+                      <h3>Cako — Presentation Practice App with Real-time Audience Reactions & Distractions</h3>
+                      
+              <p><strong>Tech</strong>: WhisperKit · Spice Model · TensorflowLite · Rive Runtime · ARKit</p>
           <div class="links">
-            <a href="https://www.figma.com/design/DWPFhY48EP5bc3Juk6W3pV/COCOCO-V1---Coco-Crunch%F0%9F%A5%A5?node-id=42832-2230&t=Sf2uTBjwrXcNvTrY-1"><i class="fa-brands fa-figma"></i> Design</a>
+              <a href="https://github.com/celine1906/NagaX"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="https://www.figma.com/design/mo4IW9ctyB6sWxhl5emeWf/Cako-Design?node-id=7-2&t=s34jp5aftnonYaqx-1"><i class="fa-brands fa-figma"></i> Design</a>
+              <a href="https://apps.apple.com/id/app/cako/id6755706759"><i class="fa-brands fa-apple"></i> App Store</a>
+              </div>
+          </div>
+          </div>
+          <div class="project-content">
+            <p><strong>Problem</strong><br>
+              Students practice presentations without real distractions or audience feedback, causing delivery issues to go unnoticed.</p>
+
+              <p><strong>Solution</strong><br>
+              An interactive practice app that simulates live audience reactions based on delivery aspects (intonation, tempo, filler words, and eye contact) and distractions, followed by data-driven delivery evaluation.</p>
+
+  <p><strong>My Contribution</strong></p>
+  <ul>
+    <li>Researched and defined the technical stack for real-time presentation delivery analysis</li>
+    <li>Integrated Spice Model to estimate vocal pitch and analyze intonation patterns</li>
+    <li>Built delivery scoring logic using Combine to process real-time speech and pitch data</li>
+    <li>Implemented Rive Runtime to dynamically update audience reactions based on delivery performance</li>
+    <li>Implemented accessibility features including larger text support and differentiate without color alone</li>
+  </ul>
+
+  <p><strong>Impact</strong></p>
+  <ul>
+    <li>Helped users identify delivery issues they were previously unaware of</li>
+    <li>Improved focus and improvisation under distraction</li>
+    <li>Increased confidence and preparedness before real presentation scenarios</li>
+    <li>Available in iOS and iPadOS for better experience, can be accessed on App Store</li>
+  </ul>
+        </div>  
+      </article>
+
+      <article class="project project-grid fade-up">
+          <div class="project-media">
+            <img src="cococo.jpg" alt="Family Trip screenshot" />
+            <div class="project-meta">
+              <span class="month">Aug 2025</span>
+            <h3>Coco.co — Enhancing Booking Trip App Experience</h3>
+            
+            <p><strong>Tech</strong>: UIKit · MVVM + Coordinator Architecture · Supabase</p>
+            <div class="links">
+              <a href="https://www.figma.com/design/DWPFhY48EP5bc3Juk6W3pV/COCOCO-V1---Coco-Crunch%F0%9F%A5%A5?node-id=42832-2230&t=Sf2uTBjwrXcNvTrY-1"><i class="fa-brands fa-figma"></i> Design</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-content">
-          <p><strong>Problem</strong><br>Family travelers hesitate to book trips due to safety and uncertainty.</p>
-          <p><strong>Solution</strong><br>Improved the booking flow by adding detailed itineraries, safety information,
-and family-friendly indicators to reduce hesitation.</p>
-          <p><b>My Contribution</b></p>
-            <ul>
-            <li>Contributed to redesigning the booking flow to reduce hesitation for family travelers.</li>
-            <li>Implemented UI components to display detailed itineraries, safety information, and family-friendly badges.</li>
-            <li>Worked with programmatic UIKit to build reusable and customizable interface components.</li>
-            <li>Collaborated on backend integration by consuming API and implementing data fetching.</li>
-            <li>Focused on improving user confidence and trust throughout the booking decision process.</li>
-            </ul>
+          <div class="project-content">
+            <p><strong>Problem</strong><br>Family travelers hesitate to book trips due to safety and uncertainty.</p>
+            <p><strong>Solution</strong><br>Improved the booking flow by adding detailed itineraries, safety information,
+  and family-friendly indicators to reduce hesitation.</p>
+            <p><b>My Contribution</b></p>
+              <ul>
+              <li>Contributed to redesigning the booking flow to reduce hesitation for family travelers.</li>
+              <li>Implemented UI components to display detailed itineraries, safety information, and family-friendly badges.</li>
+              <li>Worked with programmatic UIKit to build reusable and customizable interface components.</li>
+              <li>Collaborated on backend integration by consuming API and implementing data fetching.</li>
+              <li>Focused on improving user confidence and trust throughout the booking decision process.</li>
+              </ul>
+
+            <p><b>Impact</b><br>
+              Increased user confidence and potential booking conversion rate.
+          </p>
+            
+      </article>
+
+      <article class="project project-grid fade-up">
+          <div class="project-media">
+            <img src="pinjamah.png" alt="Cuan Girls screenshot" />
+            <div class="project-meta">
+  <span class="month">Jul 2025</span>
+            <h3>PinjamAh! — Loan Risk Simulation for P2P Lending Education</h3>
+            
+            <p><strong>Tech</strong>: Swift · SwiftUI · MVVM Architecture</p>
+            <div class="links">
+              <a href="https://github.com/celine1906/C8S2-Cuan-Girls-Industry-Partnership-Challenge"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="https://www.figma.com/design/1MK7HH24kOM6gxW4u2GkUz/PinjemAh?node-id=625-7345&t=BS5Z12fAywtdFjFi-1"><i class="fa-brands fa-figma"></i> Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p><strong>Problem</strong><br>Financially less literate users struggle to understand safe borrowing limits.</p>
+            <p><strong>Solution</strong><br>An iOS app that simulates P2P loan risks and repayment scenarios.
+        </p>
+            <p><b>My Contribution</b></p>
+          <ul>
+          <li>Designed and implemented loan risk simulation logic tailored for P2P lending scenarios.</li>
+          <li>Developed interactive SwiftUI components, including sliders, to visualize borrowing limits and risk levels.</li>
+          <li>Translated complex financial concepts into simple and user-friendly UI interactions.</li>
+          <li>Ensured the app flow supports financially less literate users by prioritizing clarity and guided decision-making.</li>
+          <li>Worked on aligning the simulation results with real-world repayment considerations.</li>
+          </ul>
 
           <p><b>Impact</b><br>
-            Increased user confidence and potential booking conversion rate.
+          Helped users make safer and more informed borrowing decisions.
         </p>
-          
-    </article>
+        </article>
 
-    <article class="project project-grid fade-up">
-        <div class="project-media">
-          <img src="pinjamah.png" alt="Cuan Girls screenshot" />
-          <div class="project-meta">
-<span class="month">Jul 2025</span>
-          <h3>PinjamAh! — Loan Risk Simulation for P2P Lending Education</h3>
-          
-          <p><strong>Tech</strong>: Swift · SwiftUI · MVVM Architecture</p>
-          <div class="links">
-            <a href="https://github.com/celine1906/C8S2-Cuan-Girls-Industry-Partnership-Challenge"><i class="fa-brands fa-github"></i> Repository</a>
-            <a href="https://www.figma.com/design/1MK7HH24kOM6gxW4u2GkUz/PinjemAh?node-id=625-7345&t=BS5Z12fAywtdFjFi-1"><i class="fa-brands fa-figma"></i> Design</a>
+        <article class="project project-grid fade-up">
+          <div class="project-media">
+            <img src="wiseframe.jpg" alt="WiseFrame screenshot" />
+            <div class="project-meta">
+  <span class="month">Jun 2025</span>
+            <h3>WiseFrame — AI Eyewear Recommendation</h3>
+            <p><strong>Tech</strong>: Vision · CoreML · CreateML · ARKit</p>
+  <div class="links">
+              <a href="https://github.com/celine1906/C8S2-MLChallenge-WiseFrame"><i class="fa-brands fa-github"></i> Repository</a>
+              <a href="https://www.figma.com/design/KCoME2X7FgEG5huIJ5a8vd/a7?node-id=0-1&t=O5P389HKYgo83Zks-1"><i class="fa-brands fa-figma"></i> Design</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-content">
-          <p><strong>Problem</strong><br>Financially less literate users struggle to understand safe borrowing limits.</p>
-          <p><strong>Solution</strong><br>An iOS app that simulates P2P loan risks and repayment scenarios.
-      </p>
-          <p><b>My Contribution</b></p>
-        <ul>
-        <li>Designed and implemented loan risk simulation logic tailored for P2P lending scenarios.</li>
-        <li>Developed interactive SwiftUI components, including sliders, to visualize borrowing limits and risk levels.</li>
-        <li>Translated complex financial concepts into simple and user-friendly UI interactions.</li>
-        <li>Ensured the app flow supports financially less literate users by prioritizing clarity and guided decision-making.</li>
-        <li>Worked on aligning the simulation results with real-world repayment considerations.</li>
-        </ul>
+          <div class="project-content">
+            
+            <p><strong>Problem</strong><br>Users experience hesitation and uncertainty when choosing eyeglass frames.</p>
+            <p><strong>Solution</strong><br>An AI-powered app that recommends frame shapes based on facial features and
+          frame colors based on skin tone.</p>
+          
+            <p><b>My Contribution</b></p>
+          <ul>
+          <li>Implemented skin tone detection using CreateML to generate personalized frame color suggestions.</li>
+          <li>Integrated CoreML models into the iOS app and handled model inference within the SwiftUI flow.</li>
+          <li>Developed AR-based virtual try-on experience using ARKit and RealityKit for real-time glasses preview.</li>
+          <li>Collaborated with design and product perspectives to ensure AI recommendations were explainable and confidence-boosting for users.</li>
+          </ul>
+  <p><b>Impact</b><br>
+          Reduced hesitation and improved confidence in eyewear selection process.
+        </p>
+            </div>
+        </article>
 
-        <p><b>Impact</b><br>
-        Helped users make safer and more informed borrowing decisions.
-      </p>
-      </article>
-
-      <article class="project project-grid fade-up">
-        <div class="project-media">
-          <img src="wiseframe.jpg" alt="WiseFrame screenshot" />
-          <div class="project-meta">
-<span class="month">Jun 2025</span>
-          <h3>WiseFrame — AI Eyewear Recommendation</h3>
-           <p><strong>Tech</strong>: Vision · CoreML · CreateML · ARKit</p>
-<div class="links">
-            <a href="https://github.com/celine1906/C8S2-MLChallenge-WiseFrame"><i class="fa-brands fa-github"></i> Repository</a>
-            <a href="https://www.figma.com/design/KCoME2X7FgEG5huIJ5a8vd/a7?node-id=0-1&t=O5P389HKYgo83Zks-1"><i class="fa-brands fa-figma"></i> Design</a>
+        <article class="project project-grid fade-up">
+          <div class="project-media">
+            <img src="goparking.jpg" alt="GOParking AR screenshot" />
+            <div class="project-meta">
+  <span class="month">Apr – May 2025</span>
+            <h3>GOParking — AR Parking Navigation</h3>
+  <p><strong>Tech</strong>: SwiftUI · ARKit · CoreLocation</p>
+  <div class="links">
+              <a href="https://github.com/celine1906/C8S2-ExperienceChallenge-GOParkin9"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-content">
-          
-          <p><strong>Problem</strong><br>Users experience hesitation and uncertainty when choosing eyeglass frames.</p>
-          <p><strong>Solution</strong><br>An AI-powered app that recommends frame shapes based on facial features and
-        frame colors based on skin tone.</p>
-         
-          <p><b>My Contribution</b></p>
-        <ul>
-        <li>Implemented skin tone detection using CreateML to generate personalized frame color suggestions.</li>
-        <li>Integrated CoreML models into the iOS app and handled model inference within the SwiftUI flow.</li>
-        <li>Developed AR-based virtual try-on experience using ARKit and RealityKit for real-time glasses preview.</li>
-        <li>Collaborated with design and product perspectives to ensure AI recommendations were explainable and confidence-boosting for users.</li>
-        </ul>
-<p><b>Impact</b><br>
-        Reduced hesitation and improved confidence in eyewear selection process.
-      </p>
-          
-      </article>
+          <div class="project-content">
+            
+            <p><strong>Problem</strong><br>Users often forget where they parked and struggle to navigate large parking areas.
+        </p>
+            <p><strong>Solution</strong><br>An AR-based navigation experience that guides users with continuously updating arrows
+          until they reach their exact parking spot.</p>
+            
+            <p><b>My Contribution</b></p>
+          <ul>
+          <li>Designed and implemented the AR navigation flow to guide users from their current position to the exact parking location.</li>
+          <li>Developed continuously updating AR arrows that respond to real-time user movement and distance changes.</li>
+          <li>Synchronized CoreLocation data with ARKit anchors to ensure accurate and stable AR object placement.</li>
+          <li>Structured SwiftUI views to keep the AR camera experience immersive while displaying essential navigation information.</li>
+          </ul>
+  <p><b>Impact</b><br>
+          Reduced user confusion and saving time on finding the vehicle.
+        </p>
+        </article>  
 
-      <article class="project project-grid fade-up">
-        <div class="project-media">
-          <img src="goparking.jpg" alt="GOParking AR screenshot" />
-          <div class="project-meta">
-<span class="month">Apr – May 2025</span>
-          <h3>GOParking — AR Parking Navigation</h3>
-<p><strong>Tech</strong>: SwiftUI · ARKit · CoreLocation</p>
-<div class="links">
-            <a href="https://github.com/celine1906/C8S2-ExperienceChallenge-GOParkin9"><i class="fa-brands fa-github"></i> Repository</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-content">
-          
-          <p><strong>Problem</strong><br>Users often forget where they parked and struggle to navigate large parking areas.
-      </p>
-          <p><strong>Solution</strong><br>An AR-based navigation experience that guides users with continuously updating arrows
-        until they reach their exact parking spot.</p>
-          
-          <p><b>My Contribution</b></p>
-        <ul>
-        <li>Designed and implemented the AR navigation flow to guide users from their current position to the exact parking location.</li>
-        <li>Developed continuously updating AR arrows that respond to real-time user movement and distance changes.</li>
-        <li>Synchronized CoreLocation data with ARKit anchors to ensure accurate and stable AR object placement.</li>
-        <li>Structured SwiftUI views to keep the AR camera experience immersive while displaying essential navigation information.</li>
-        </ul>
-<p><b>Impact</b><br>
-        Reduced user confusion and saving time on finding the vehicle.
-      </p>
-      </article>  
-
+      </div>
     </div>
+
+    <div class="tab-content" id="data">
+<div class="project-list">
+
+  <article class="project project-grid fade-up">
+    
+    <div class="project-media">
+      <img src="superstore-operational.jpg" alt="Dashboard screenshot" />
+      <img src="superstore-tactical.png" alt="Dashboard screenshot" />
+      <img src="superstore-strategic.png" alt="Dashboard screenshot" />
+      <div class="project-meta">
+        <h3>Online Super Store Performance Dashboard</h3>
+        <p><strong>Tools</strong>: Tableau · KPI Monitoring · Business Performance Analysis</p>
+        <div class="links">
+              <a href="https://www.kaggle.com/datasets/monisamir/online-super-store-sales-analysis"><i class="fa-brands fa-kaggle"></i> Dataset</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <p><strong>Problem</strong><br>
+      Management teams require clear, structured dashboards to monitor daily operations, evaluate product and customer performance, and support long-term business decision-making.</p>
+      <p><strong>Analysis & Approach</strong><br>
+      Developed a comprehensive performance dashboard consisting of three levels of analysis:</p>
+      <p><strong>Operational</strong><br>
+      <ul>
+        <li>Monitored daily sales, order quantity, and product return</li>
+        <li>Analyzed order details, sales trends by day, and return rates by product and sub-category</li>
+        <li>Enabled detailed filtering by date and product attributes for operational monitoring</li>
+      </ul>
+      </p>
+
+      <p><strong>Tactical</strong><br>
+      <ul>
+        <li>Evaluated sales and profit performance by product, customer segment, and region</li>
+        <li>Identified high- and low-performing products to support marketing and inventory decisions</li>
+        <li>Analyzed average order value and processing time to assess operational efficiency</li>
+      </ul>
+      </p>
+
+      <p><strong>Strategic</strong><br>
+      <ul>
+        <li>Tracked key KPIs including total sales, profit, total customers, and total orders</li>
+        <li>Visualized long-term trends in sales and profit by quarter</li>
+        <li>Analyzed customer segmentation, product category contribution, and geographic profit distribution</li>
+      </ul>
+      </p>
+
+      <p><strong>Key Insight</strong><br>
+      <ul>
+        <li>Certain regions and product categories consistently generated higher revenue and profit</li>
+        <li>Specific products contributed disproportionately to total profit, while others underperformed</li>
+        <li>Customer segments showed distinct purchasing patterns valuable for strategic planning</li>
+      </ul>
+      </p>
+
+      <p><strong>Impact</strong><br>
+      <ul>
+        <li>Transformed complex retail transaction data into actionable business insights</li>
+        <li>Supported decision-making at operational, managerial, and executive levels</li>
+        <li>Demonstrated the use of data visualization to align daily performance with long-term business strategy</li>
+      </ul>
+      </p>
+  </article>
+
+  <article class="project project-grid fade-up">
+    
+      <div class="project-media">
+        <img src="disease-dashboard.jpg" alt="Dashboard screenshot" />
+        <div class="project-meta">
+          <h3>Global Disease Data Analysis & Visualization</h3>
+          <p><strong>Tools</strong>: Tableau · KPI Analysis · Data Visualization</p>
+          <div class="links">
+              <a href="https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics"><i class="fa-brands fa-kaggle"></i> Dataset</a>
+          </div>
+        </div>
+      </div>
+    <div class="project-content">
+      <p><strong>Problem</strong><br>
+      Health data is complex and difficult to interpret without clear indicators, making it hard for stakeholders to identify risk areas, trends, and priority actions for disease prevention.</p>
+
+      <p><strong>Analysis & Approach</strong><br>
+      <ul>
+        <li>Defined key health KPIs including Mortality Rate, Prevalence Rate, and Recovery Rate</li>
+        <li>Built an interactive Tableau dashboard with filters by disease type, year range, region, age group, and gender</li>
+        <li>Visualized trends using maps, line charts, bar charts, heatmaps, and stacked bar charts to uncover patterns across demographics and regions</li>
+      </ul>
+      </p>
+
+      <p><strong>Key Insights</strong><br>
+      <ul>
+        <li>Certain regions showed consistently higher mortality rates, indicating gaps in healthcare access</li>
+        <li>Mortality and prevalence trends fluctuated over time, with notable spikes in specific years</li>
+        <li>Recovery rates varied slightly by age group, suggesting opportunities for targeted health programs</li>
+        <li>Male patients showed marginally higher prevalence and mortality compared to females</li>
+      </ul>
+      </p>
+     
+      <p><strong>Impact</strong><br>
+      <ul>
+        <li>Transformed raw health data into actionable insights for public health decision-making</li>
+        <li>Enabled data-driven recommendations for regional prioritization, age-specific interventions, and gender-sensitive health strategies</li>
+        <li>Improved clarity and accessibility of health analytics through interactive visualization</li>
+      </ul>
+      </p>
+    </div>
+  </article>
+
+  <article class="project project-grid fade-up">
+      <div class="project-media">
+        <img src="retail-dashboard.png" alt="Dashboard screenshot" />
+        <div class="project-meta">
+          <h3>Retail Customer & Sales Analysis Dashboard</h3>
+          <p><strong>Tools</strong>: Tableau · Business Analysis · Data Visualization</p>
+          <div class="links">
+              <a href="https://www.kaggle.com/datasets/akashbommidi/super-market-sales"><i class="fa-brands fa-kaggle"></i> Dataset</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p><strong>Problem</strong><br>
+        Retail businesses need to understand customer segments, product performance, and revenue distribution to optimize sales strategy and improve profitability.</p>
+
+        <p><strong>Analysis & Approach</strong><br>
+        <ul>
+          <li>Analyzed customer segmentation based on customer type, gender, and product category</li>
+          <li>Visualized gross income, margin percentage, monthly margin trends, and product quantity sold</li>
+          <li>Used pie charts, heatmaps, bar charts, and line charts to highlight patterns across customers, locations, and time</li>
+        </ul>
+        </p>
+
+        <p><strong>Key Insights</strong><br>
+        <ul>
+          <li>Member customers contributed more significantly to overall sales compared to non-members</li>
+          <li>Fashion and electronics emerged as top-performing product categories</li>
+          <li>Gross income varied by city, with certain locations consistently outperforming others</li>
+          <li>Gross margin showed an overall upward trend despite short-term fluctuations</li>
+        </ul>
+        </p>
+
+        <p><strong>Impact</strong><br>
+        <ul>
+          <li>Provided clear visibility into customer behavior and product demand</li>
+          <li>Helped identify high-performing segments and locations for targeted business strategies</li>
+          <li>Enabled data-driven evaluation of sales performance across time and geography</li>
+        </ul>
+        </p>
+      </div>  
+  </article>
+
+   <article class="project project-grid fade-up">
+    
+    <div class="project-media">
+      <img src="mba.png" alt="MBA screenshot" />
+      <div class="project-meta">
+        <h3>Online Super Store Market Basket Analysis</h3>
+        <p><strong>Tools</strong>: Python · Pandas · mlxtend · Google Colab</p>
+        <div class="links">
+              <a href="https://www.kaggle.com/datasets/monisamir/online-super-store-sales-analysis"><i class="fa-brands fa-kaggle"></i> Dataset</a>
+              <a href="https://github.com/celine1906/Market-Basket-Analysis"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <p><strong>Problem</strong><br>
+      Retailers need to understand which products are frequently purchased together to improve cross-selling strategies and product recommendations.</p>
+
+      <p><strong>Analysis & Approach</strong><br>
+      <ul>
+        <li>Cleaned and transformed transaction data into item-level purchase records</li>
+        <li>Applied Apriori algorithm to identify frequent itemsets</li>
+        <li>Generated association rules using support, confidence, and lift metrics</li>
+        <li>Analyzed top product combinations with strong purchase relationships</li>
+      </ul>
+      </p>
+
+      <p><strong>Key Insights</strong><br>
+      <ul>
+        <li>Identified product pairs and item combinations frequently bought together</li>
+        <li>Discovered high-lift associations indicating strong cross-sell potential</li>
+        <li>Highlighted product relationships useful for promotions and bundling strategies</li>
+      </ul>
+      </p>
+
+      <p><strong>Impact</strong><br>
+      <ul>
+        <li>Supported data-driven cross-selling and recommendation decisions</li>
+        <li>Provided insights for product bundling and marketing optimization</li>
+        <li>Helped retailers increase potential basket value per transaction</li>
+      </ul>
+      </p>
+    </div>
+  </article>
+</div>
+</div>
+
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>© 2025 Regina Celine Adiwinata · iOS Developer</p>
+    <p>© 2025 Regina Celine Adiwinata · Software Engineer</p>
   </div>
 </footer>
 
