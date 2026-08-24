@@ -583,6 +583,42 @@
           </article>
 
           <article class="project project-grid fade-up">
+            <div class="project-media">
+              <img src="images/agarscope.png" alt="AGARScope screenshot" />
+              <div class="project-meta">
+                <span class="month">Jul – Aug 2026</span>
+                <h3>AGARScope — AI-Powered Bacterial Colony Counting</h3>
+                <p><strong>Tech</strong>: Swift · Python · YOLO · Core ML · OpenCV · FastSAM · U2Net</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+
+                <p><strong>Problem</strong><br>
+                  Manual bacterial colony counting is time-consuming and can be inconsistent, especially when colonies are small, densely distributed, or overlapping.
+                </p>
+
+                <p><strong>Solution</strong><br>
+                  An AI-powered bacterial colony counting system that automatically identifies Petri dishes, detects bacterial colonies, and estimates the colony count from images using computer vision and object detection models.
+                </p>
+
+                <p><b>My Contribution</b></p>
+                <ul>
+                  <li>Developed the computer vision pipeline for Petri dish detection, image preprocessing, and bacterial colony detection.</li>
+                  <li>Benchmarked multiple object detection approaches, including YOLO, RT-DETR, DINO, and Faster R-CNN.</li>
+                  <li>Experimented with Petri dish segmentation using Grounding DINO + SAM2 to improve image cropping and isolate the dish from the background.</li>
+                  <li>Applied image preprocessing techniques to enhance the visual contrast between bacterial colonies and the background.</li>
+                  <li>Trained and evaluated YOLO-based models for bacterial colony detection and counting.</li>
+                  <li>Explored model optimization and Core ML deployment for on-device inference in Swift.</li>
+                </ul>
+
+                <p><b>Learning</b><br>
+                  Learned that input resolution plays a critical role in detecting small bacterial colonies, as higher resolutions preserve more details and help the model distinguish small colonies from the background.
+                </p>
+            </div>
+          </article>
+
+          <article class="project project-grid fade-up">
 
             <div class="project-media">
               <img src="images/ai-agent.png" alt="AI Agent screenshot" />
