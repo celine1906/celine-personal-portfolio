@@ -44,3 +44,41 @@ tabButtons.forEach(button => {
     document.getElementById(button.dataset.tab).classList.add("active");
   });
 });
+
+// Lightbox untuk gambar project
+const lightbox = document.createElement('div');
+lightbox.classList.add('lightbox');
+lightbox.innerHTML = `
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" src="" alt="">
+`;
+document.body.appendChild(lightbox);
+
+const lightboxImg = lightbox.querySelector('.lightbox-img');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+document.querySelectorAll('.project-media img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('active');
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+}
+
+// Klik tombol close
+lightboxClose.addEventListener('click', closeLightbox);
+
+// Klik di luar gambar (background lightbox)
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+// Tutup dengan tombol Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
